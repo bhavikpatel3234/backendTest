@@ -10,7 +10,7 @@ import org.springframework.http.client.ClientHttpResponse;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.ResponseErrorHandler;
 
-import java.io.*;
+import java.io.IOException;
 
 @Service
 public class HTTPErrorCodeServiceImpl implements ResponseErrorHandler {
