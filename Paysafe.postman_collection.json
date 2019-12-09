@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "47cdb418-f975-4d9d-a2a6-c52b02ea057e",
+		"name": "Paysafe",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Start Monitor POST Request Valid Input",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"timeInterval\": 2,\r\n\t\"url\": \"https://api.test.par\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/monitor/start",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"monitor",
+						"start"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Monitor Overview",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/overview",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"overview"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Start Monitor POST Request Invalid Input 403",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"timeInterval\": 5,\r\n\t\"url\": \"https://api.test.paysafe.com\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/monitor/start",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"monitor",
+						"start"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Stop Monitor GET request",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/monitor/stop",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"monitor",
+						"stop"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

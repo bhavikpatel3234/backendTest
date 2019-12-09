@@ -1,0 +1,5 @@
+
+Msquid:S1172-"*Remove this unused method parameter "url".(±ßÛúÿÿÿÿ8¤…ğ¡î-
+Fsquid:S16043"(Make this anonymous inner class a lambda(ÎÙ’8‘´ î-
+Fsquid:S1604."(Make this anonymous inner class a lambda(ì½ÿ8‘´ î-
+dsquid:S34571"AFormat specifiers should be used instead of string concatenation.(ÀŠ“¿ûÿÿÿÿ8ÆÿŸ¢î-
