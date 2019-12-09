@@ -13,19 +13,6 @@ Request-body :
 Response :
 Monitor has been started.
 
-1) Start monitor
-URL : http://localhost:8080/monitor/start
-Request-type : POST
-Request-header : 
-		Content-Type : application/json 
-Request-body : 
-{
-	"timeInterval": 5, // Provide Time in seconds
-	"url": "https://api.test.paysafe.com/accountmanagement/monitor"
-}
-Response :
-Monitor has been started.
-
 2) Stop monitor
 URL : http://localhost:8080/monitor/stop
 Request-type : GET 
